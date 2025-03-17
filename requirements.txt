@@ -18,3 +18,5 @@ pytest==8.3.5
     #   pytest-asyncio
 pytest-asyncio==0.25.3
     # via -r requirements.in
+ruff==0.9.10
+    # via -r requirements.in

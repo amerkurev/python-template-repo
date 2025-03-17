@@ -27,4 +27,4 @@ COPY src $APP_DIR
 
 WORKDIR $APP_DIR
 
-CMD ["python"]
+CMD ["python", "main.py"]

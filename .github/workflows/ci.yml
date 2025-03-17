@@ -1,0 +1,44 @@
+name: build
+
+on:
+    push:
+      branches:
+        - master
+      tags:
+        - '*'
+      paths-ignore:
+        - '*.md'
+    pull_request:
+      paths-ignore:
+        - '*.md'
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Set up Docker Buildx
+              id: buildx
+              uses: docker/setup-buildx-action@v3
+
+            - name: Build Docker image
+              env:
+                GITHUB_REF: ${{ github.ref }}
+              run: |
+                make info
+                make build
+
+            - name: Test and Lint
+              run: |
+                make test
+                make lint
+
+            - name: Report coverage
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                pip install coveralls
+                cd src && coveralls --service=github
