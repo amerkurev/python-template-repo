@@ -45,7 +45,6 @@ cov:
 dev: build
 	- @docker run -it --rm \
 	  --name $(PROJECT_NAME) \
-  	  --env-file=.env \
 	  -v $(PWD)/src:/usr/src/app \
 	  -p 8000:8000 \
 	  $(IMAGE)

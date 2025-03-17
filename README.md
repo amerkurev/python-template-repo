@@ -9,6 +9,19 @@
 
 This repository is a template for Python projects. It includes a basic project structure.
 
+## Features
+
+- Python 3.13 compatibility
+- Designed for Docker-based projects (not libraries)
+- Produces a ready-to-use Docker image
+- Dependency management with pip-tools, separating direct from transitive dependencies
+- Testing setup with Pytest and Coverage reporting
+- Fast and convenient Ruff linter and formatter
+- Development workflow with live code mounting for real-time Docker development
+- Comprehensive Makefile with useful development commands
+- Pre-configured GitHub CI workflow (using make commands)
+- Git version and commit hash integrated into the code via environment variables
+
 ## Available Commands
 
 This project includes several convenient `make` commands to help with development:
