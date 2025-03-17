@@ -7,7 +7,9 @@
 [![License](https://img.shields.io/badge/license-mit-blue.svg)](https://github.com/amerkurev/python-template-repo/blob/master/LICENSE)
 </div>
 
-This repository is a template for Python projects. It includes a basic project structure.
+📦 Ready-to-use GitHub template repository for Python 3 Docker applications with development best practices.   
+🛠️ Includes dependency management, testing, linting, CI/CD workflow, and containerization.  
+🚀 Just click "Use this template" to start your project.  
 
 ## Features
 
