@@ -18,10 +18,3 @@ pytest==8.3.5
     #   pytest-asyncio
 pytest-asyncio==0.25.3
     # via -r requirements.in
-ruff==0.9.10
-    # via -r requirements.in
-uv==0.6.6
-    # via -r requirements.in
-
-# The following packages are considered to be unsafe in a requirements file:
-# pip
