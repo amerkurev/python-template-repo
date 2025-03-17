@@ -2,7 +2,7 @@
 
 # https://www.mkdocs.org/user-guide/configuration/
 site_name: Python Template Repository
-site_url: https://docker-disk.space
+site_url: https://amerkurev.github.io/python-template-repo/
 site_description: 📦 Ready-to-use GitHub template repository for Python 3 Docker applications with development best practices. 🛠️ Includes dependency management, testing, linting, CI/CD workflow, and containerization. 🚀 Just click "Use this template" to start your project.
 site_author: https://github.com/amerkurev
 
