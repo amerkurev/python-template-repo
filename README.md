@@ -14,11 +14,12 @@
 ## Features
 
 - Python 3.13 compatibility
-- Designed for Docker-based projects (not libraries)
+- Designed for Docker-based projects (not libraries) like this [doku](https://github.com/amerkurev/doku) project
 - Produces a ready-to-use Docker image
 - Dependency management with pip-tools, separating direct from transitive dependencies
 - Testing setup with Pytest and Coverage reporting
 - Fast and convenient Ruff linter and formatter
+- Automatic documentation generation from README, integrated with GitHub Actions and published to GitHub Pages
 - Development workflow with live code mounting for real-time Docker development
 - Comprehensive Makefile with useful development commands
 - Pre-configured GitHub CI workflow (using make commands)
@@ -36,3 +37,7 @@ This project includes several convenient `make` commands to help with developmen
 - `make test` - Run unit tests in Docker container
 - `make cov` - Generate HTML test coverage reports
 - `make dev` - Start development container with mounted source code, environment variables and exposed port 8000
+
+## License
+
+[MIT](LICENSE)
