@@ -3,7 +3,7 @@ article {
 }
 
 :root  > * {
-  --md-primary-fg-color:        #1d63ed;
-  --md-primary-fg-color--light: #e5f2fc;
-  --md-primary-fg-color--dark:  #00084d;
+  --md-primary-fg-color:        #333;
+  --md-primary-fg-color--light: #f5f5f5;
+  --md-primary-fg-color--dark:  #333;
 }
